@@ -3,13 +3,18 @@ import Grounds from "../screens/Grounds/Grounds";
 import Home from "../screens/Home/Home";
 import Matches from "../screens/Matches/Matches";
 import Profile from "../screens/Profile/Profile";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+// import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 const Tab = createMaterialBottomTabNavigator();
 
 export default function BottomTabs() {
   return (
-    <Tab.Navigator initialRouteName="Home">
+    <Tab.Navigator
+      initialRouteName="Home"
+      activeColor="#000"
+      inactiveColor="#000"
+      barStyle={{ backgroundColor: "#FFF" }}
+    >
       <Tab.Screen
         name="Home"
         component={Home}
